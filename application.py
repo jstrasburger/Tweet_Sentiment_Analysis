@@ -38,7 +38,53 @@ df.columns = ['id','created','author_id','text','sentiment']
 
 prediction_results = df
 
-app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
+app = dash.Dash(__name__, 
+    external_stylesheets=[dbc.themes.BOOTSTRAP], 
+    meta_tags=[
+
+        # The following 4 tags are for Linkdin preview
+
+        {
+            'property': 'og:title',
+            'content': 'TweetyHunter.ai'
+        },
+
+       # {
+       #     'property': 'og:image' 
+       #     'content': '//media.example.com/1234567.jpg'
+       # },
+
+        {
+            'property': 'og:description',
+            'content': 'TweetyHunter is an application that scrapes twitter using the twitter api and can make sentiment predictions in real time.'
+        },
+
+        {
+            'property': 'og:url',
+            'content': '//www.nolaanalytics.com'
+        },
+
+        # A tag that tells Internet Explorer (IE)
+        # to use the latest renderer version available
+        # to that browser (e.g. Edge)
+        {
+            'http-equiv': 'X-UA-Compatible',
+            'content': 'IE=edge'
+        },
+        # A tag that tells the browser not to scale
+        # desktop widths to fit mobile screens.
+        # Sets the width of the viewport (browser)
+        # to the width of the device, and the zoom level
+        # (initial scale) to 1.
+        #
+        # Necessary for "true" mobile support.
+        {
+          'name': 'viewport',
+          'content': 'width=device-width, initial-scale=1.0'
+        }
+    ]
+)
+
 application = app.server
 
 
