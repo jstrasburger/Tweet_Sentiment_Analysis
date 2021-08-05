@@ -39,7 +39,7 @@ jack_card = dbc.Card(
                 html.H4("Jack Strasburger", className="card-title"),
                 html.P(jack_bio,className="card-text",
                 ),
-                dbc.Button("Jack's Linkedin", color="primary"),
+                # dbc.Button("Jack' Linkedin", color="primary"),
             ]
         )
     ]
@@ -53,7 +53,7 @@ luis_card = dbc.Card(
                 html.H4("Luis Villaseñor", className="card-title"),
                 html.P(luis_bio,className="card-text",
                 ),
-                dbc.Button("Luis' Linkedin", color="primary"),
+                # dbc.Button("Luis' Linkedin", color="primary"),
             ]
         )
     ]
@@ -67,7 +67,7 @@ sarah_card = dbc.Card(
                 html.H4("Sarah Zimmerman", className="card-title"),
                 html.P(sarah_bio,className="card-text",
                 ),
-                dbc.Button("Sarah's Linkedin", color="primary"),
+                # dbc.Button("Sarah's Linkedin", color="primary"),
             ]
         )
     ]
@@ -81,7 +81,7 @@ chris_card = dbc.Card(
                 html.H4("Chris Kornaros", className="card-title"),
                 html.P(chris_bio,className="card-text",
                 ),
-                dbc.Button("Chris' Linkedin", color="primary"),
+                # dbc.Button("Chris' Linkedin", color="primary"),
             ]
         )
     ]
@@ -95,7 +95,7 @@ murat_card = dbc.Card(
                 html.H4("Murat Ogeturk", className="card-title"),
                 html.P(murat_bio,className="card-text",
                 ),
-                dbc.Button("Murat's Linkedin", color="primary"),
+                # dbc.Button("Murat's Linkedin", color="primary"),
             ]
         )
     ]

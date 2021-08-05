@@ -38,8 +38,10 @@ df.columns = ['id','created','author_id','text','sentiment']
 
 prediction_results = df
 
-app = dash.Dash(__name__, 
-    external_stylesheets=[dbc.themes.BOOTSTRAP], 
+
+
+app = dash.Dash(__name__,
+    external_stylesheets=[dbc.themes.BOOTSTRAP],
     meta_tags=[
 
         # The following 4 tags are for Linkdin preview
@@ -108,7 +110,6 @@ app.layout = html.Div([
     navigation.navbar,
     html.Div(id='page-content')
 ])
-
 
 @app.callback(Output('page-content', 'children'), [Input('url', 'pathname')])
 def display_page(pathname):
