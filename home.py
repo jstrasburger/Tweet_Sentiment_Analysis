@@ -160,7 +160,7 @@ layout = html.Div(children=[
         dbc.Row([
             dbc.Col(dcc.Graph(
                     id="chr-1",
-                    figure=fig1),className="col-6"),
+                    figure=count_pie),className="col-6"),
             dbc.Col(children=[dcc.Input(
                     id="input_tweet",
                     placeholder="Input to test your tweet here",
@@ -192,13 +192,8 @@ layout = html.Div(children=[
                 ],
             className="col-6")
          ]),
-        dbc.Row([
-            dbc.Col(dcc.Graph(
+            dcc.Graph(
                 id="chr-2",
-                figure=count_bar),className="col-6"),
-            dbc.Col(dcc.Graph(
-                id="chr-3",
-                figure=count_pie),className="col-6")
-        ])
+                figure=count_bar, className='card-title')
     ])
 ])
