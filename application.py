@@ -49,10 +49,11 @@ app = dash.Dash(__name__,
             'content': 'TweetyHunter.ai'
         },
 
-       # {
-       #     'property': 'og:image' 
-       #     'content': '//media.example.com/1234567.jpg'
-       # },
+        {
+            'name': 'image',
+            'property': 'og:image',
+            'content': 'https://www.nolaanalytics.com/static/img/word_home.png'
+        },
 
         {
             'property': 'og:description',
@@ -61,7 +62,7 @@ app = dash.Dash(__name__,
 
         {
             'property': 'og:url',
-            'content': '//www.nolaanalytics.com'
+            'content': 'https://www.nolaanalytics.com'
         },
 
         # A tag that tells Internet Explorer (IE)
