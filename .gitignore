@@ -1,0 +1,8 @@
+application.zip
+model_file.pkl
+requirements.txt
+vect_file.pkl
+env
+__pycache__
+.vscode
+static/*
